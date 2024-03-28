@@ -25,7 +25,8 @@ const supplements = [
     dietOrSupplement: {
       recommendation: 'A good diet is generally adequate for most people. Vitamin C is abundant in fruits and vegetables...',
       whenSupplementNeeded: 'Supplements might be necessary for people with certain medical conditions...'
-    }
+    },
+    bgImage:'/orange2.png'
   },
   {
     id: 2,
@@ -227,7 +228,152 @@ const supplements = [
         whenSupplementNeeded: 'Highly recommended'
       }
     },
-    
+    {
+      id: 10, // Note: Adjust the ID based on the next sequence in your array
+      name: 'BCAAs (Branched-Chain Amino Acids)',
+      otherNames: ['Leucine', 'Isoleucine', 'Valine'],
+      overview: 'BCAAs consist of three essential amino acids: leucine, isoleucine, and valine. These amino acids are essential because the body cannot produce them and must be obtained from food. BCAAs are crucial for muscle protein synthesis, muscle growth, and recovery after exercise.',
+      rda: 'Not established. Supplemental doses typically range from 5-20g per day, divided before and after workouts.',
+      naturalSources: ['Meat', 'Fish', 'Eggs', 'Dairy products', 'Legumes', 'Nuts'],
+      neededFor: 'Muscle growth, enhancing exercise performance, reducing fatigue, and accelerating recovery after workouts.',
+      toxicity: 'BCAAs are generally considered safe for consumption with no well-documented toxicity levels. However, excessive intake without exercise may lead to imbalances in amino acid levels.',
+      uses: 'Popular among athletes and bodybuilders for muscle growth, endurance, and recovery. Also used in medical settings to treat liver diseases.',
+      sideEffects: 'Generally well tolerated. High doses may cause fatigue, coordination problems, or nausea. People with ALS or Maple Syrup Urine Disease should avoid BCAA supplements.',
+      precautions: 'Consult with a healthcare provider before starting BCAA supplementation, especially if pregnant, breastfeeding, or have a medical condition.',
+      interactions: 'BCAAs may interact with medications for diabetes and chronic alcohol users due to potential effects on blood sugar levels and liver health.',
+      dosing: 'Typical doses range from 5-20g per day, often split into pre- and post-workout doses. The ratio of leucine to isoleucine to valine is commonly 2:1:1.',
+      reviews: [], // Placeholder for user-generated reviews
+      foodEquivalent: {
+        description: 'While BCAAs are found in protein-rich foods, supplementation is preferred for targeted doses especially for athletic performance.',
+        examples: [
+          'A chicken breast or a piece of salmon can provide a healthy dose of BCAAs, but exact amounts can vary.',
+          'Dairy products like milk and cheese are also good sources.'
+        ]
+      },
+      dietOrSupplement: {
+        recommendation: 'For individuals with a high-protein diet, additional BCAA supplementation might not be necessary but can offer benefits for muscle recovery and growth in athletes and those engaging in regular intense exercise.',
+        whenSupplementNeeded: 'Recommended for athletes, bodybuilders, or individuals looking to enhance muscle recovery, growth, and performance.'
+      }
+    },
+    {
+      id: 11,
+      name: 'Ashwagandha',
+      overview: 'An ancient medicinal herb with multiple health benefits, including reducing stress and anxiety, improving brain function, and possibly aiding in reducing symptoms of depression.',
+      rda: '300-500mg daily with meals is commonly recommended, though doses can vary depending on the specific use.',
+      naturalSources: ['Ashwagandha is primarily taken in supplement form, derived from the root or leaves of the Withania somnifera plant.'],
+      neededFor: 'Stress relief, improved brain function, and enhanced well-being.',
+      toxicity: 'Well tolerated when taken at recommended doses; high doses may cause stomach upset, diarrhea, and vomiting.',
+      uses: 'Stress reduction, enhancing cognitive function, improving sleep quality, and potentially aiding in muscle growth and strength.',
+      sideEffects: 'Possible side effects include diarrhea, nausea, and vomiting at high doses.',
+      precautions: 'Pregnant or breastfeeding women and individuals with autoimmune diseases should avoid ashwagandha.',
+      interactions: 'May interact with thyroid, blood sugar, and blood pressure medications.',
+      dosing: '300-500mg daily, often divided into two doses, with meals.',
+      reviews: [],
+      foodEquivalent: {
+        description: 'Ashwagandha is not found in food sources; it is typically consumed as a supplement.',
+        examples: []
+      },
+      dietOrSupplement: {
+        recommendation: 'Primarily taken as a supplement due to its not being commonly found in dietary sources.',
+        whenSupplementNeeded: 'Beneficial for individuals experiencing stress and those looking to improve cognitive function and overall well-being.'
+      }
+    },
+    {
+      id: 12,
+      name: 'Turmeric/Curcumin',
+      overview: 'Turmeric contains curcumin, a substance with powerful anti-inflammatory and antioxidant properties. It may also help improve symptoms of depression and arthritis.',
+      rda: '500-2000mg of curcuminoids per day is often recommended.',
+      naturalSources: ['Turmeric root, which is commonly used as a spice in cooking.'],
+      neededFor: 'Reducing inflammation, combating oxidative stress, and improving joint health.',
+      toxicity: 'High doses may cause digestive issues, but turmeric is safe for most people when consumed in food.',
+      uses: 'Managing arthritis, reducing inflammation, enhancing skin health, and potentially lowering the risk of heart disease.',
+      sideEffects: 'High doses can lead to gastrointestinal problems.',
+      precautions: 'Should be used with caution in people with gallbladder problems, bleeding disorders, or those on blood thinners.',
+      interactions: 'Can interact with blood thinners and drugs that reduce stomach acid.',
+      dosing: '500-2000mg of curcuminoids per day, often in divided doses.',
+      reviews: [],
+      foodEquivalent: {
+        description: 'Turmeric is used as a spice and can be included in meals, but supplement forms are needed to achieve therapeutic doses of curcumin.',
+        examples: [
+          'Adding turmeric powder to curries, smoothies, and teas.'
+        ]
+      },
+      dietOrSupplement: {
+        recommendation: 'A supplement is recommended for therapeutic doses; however, turmeric can be included in the diet for general health benefits.',
+        whenSupplementNeeded: 'People with inflammatory conditions, joint pain, or digestive issues may benefit from supplementation.'
+      }
+    },
+    {
+      id: 13,
+      name: 'Green Tea Extract',
+      overview: 'Derived from green tea leaves, this extract is rich in antioxidants, particularly epigallocatechin gallate (EGCG), which is beneficial for heart health, fat loss, and preventing cancer.',
+      rda: 'Not established; supplements typically contain 250-500mg of EGCG per serving.',
+      naturalSources: ['Green tea leaves are the natural source of green tea extract.'],
+      neededFor: 'Antioxidant protection, improved heart health, and enhanced weight loss efforts.',
+      toxicity: 'Generally safe, but high doses can cause liver problems, nausea, and irritability.',
+      uses: 'Weight loss, improving cardiovascular health, and reducing the risk of chronic diseases.',
+      sideEffects: 'Possible side effects include stomach upset, constipation, and headaches.',
+      precautions: 'People with liver problems or those taking medications that affect liver function should use with caution.',
+      interactions: 'Can interact with stimulants, certain medications for heart and blood pressure, and blood thinners.',
+      dosing: '250-500mg of EGCG per serving, depending on the specific product and intended use.',
+      reviews: [],
+      foodEquivalent: {
+        description: 'While drinking green tea provides some of the same benefits, concentrated extract supplements offer a more potent dose of antioxidants.',
+        examples: [ 'Drinking 3-5 cups of green tea daily provides health benefits, but supplements concentrate these effects.'
+      ]
+    },
+    dietOrSupplement: {
+      recommendation: 'Drinking green tea is beneficial for overall health, but supplements are useful for targeted health goals like weight loss and antioxidant support.',
+      whenSupplementNeeded: 'Particularly beneficial for those looking to support weight management and cardiovascular health.'
+    },
+  },
+  {
+    id: 14,
+    name: 'Fiber Supplements',
+    overview: 'Fiber supplements are used to improve digestive health, aid in weight management, and help lower cholesterol levels. They can also regulate blood sugar levels.',
+    rda: 'The recommended daily intake of fiber is 25g for women and 38g for men, but this can vary based on individual dietary needs.',
+    naturalSources: ['Whole grains', 'Fruits', 'Vegetables', 'Legumes', 'Nuts', 'Seeds'],
+    neededFor: 'Digestive health, blood sugar regulation, and cholesterol management.',
+    toxicity: 'Excessive intake can lead to gastrointestinal discomfort, bloating, and gas.',
+    uses: 'To supplement dietary intake of fiber, especially for individuals not consuming enough fruits, vegetables, and whole grains.',
+    sideEffects: 'May include bloating, gas, and altered bowel movements, especially if intake is suddenly increased.',
+    precautions: 'Should be increased gradually to prevent gastrointestinal discomfort. Adequate water intake is also important.',
+    interactions: 'Can interact with certain medications by affecting their absorption.',
+    dosing: 'Varies based on the type of fiber and individual needs, but generally, supplements are taken to reach the daily fiber intake goals.',
+    reviews: [],
+    foodEquivalent: {
+      description: 'Dietary fiber is best obtained from whole food sources, but supplements can help reach daily goals.',
+      examples: []
+    },
+    dietOrSupplement: {
+      recommendation: 'Most people should aim to get their fiber from food sources, but supplements can be beneficial for those not meeting their needs through diet alone.',
+      whenSupplementNeeded: 'Useful for individuals with digestive issues, those on restricted diets, and to help manage blood sugar and cholesterol levels.'
+    }
+  },
+  {
+    id: 15,
+    name: 'Vitamin E',
+    overview: 'Vitamin E is a powerful antioxidant that helps protect cells from damage. It is also important for healthy skin, eyes, and immune function.',
+    rda: 'The recommended dietary allowance for adults is 15mg (22.4 IU) per day.',
+    naturalSources: ['Nuts and seeds', 'Spinach and broccoli', 'Vegetable oils'],
+    neededFor: 'Cell protection from oxidative damage, skin health, and immune support.',
+    toxicity: 'High doses can interfere with blood clotting and increase the risk of bleeding.',
+    uses: 'Used to prevent coronary heart disease, support eye health, and reduce the risk of cancer.',
+    sideEffects: 'Rare, but high doses can lead to nausea, diarrhea, and stomach cramps.',
+    precautions: 'People taking blood thinners should consult a healthcare provider before starting vitamin E supplements.',
+    interactions: 'May interact with blood thinners and other medications.',
+    dosing: '15mg (22.4 IU) per day for adults, though higher doses may be prescribed for specific medical conditions.',
+    reviews: [],
+    foodEquivalent: {
+      description: 'A balanced diet typically provides adequate vitamin E, but supplements can help fill nutritional gaps.',
+      examples: []
+    },
+    dietOrSupplement: {
+      recommendation: 'A healthy diet is usually sufficient, but supplements may be beneficial for those with certain health conditions or dietary restrictions.',
+      whenSupplementNeeded: 'Supplementation may be advised for individuals with vitamin E deficiency or those at risk of heart disease.'
+    }
+  },
+
   ];
   
 
